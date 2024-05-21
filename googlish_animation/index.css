@@ -1,0 +1,68 @@
+:root {
+    font-size: 30px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper {
+    position: relative;
+}
+.ball {
+    position: absolute  ;
+    width: 1rem;    
+    height: 1rem;
+    border-radius: .5rem;
+}
+.red {
+    background-color: rgb(221, 0, 0);
+    animation: 2s ease-in-out infinite red;
+}
+.green {
+    background-color: rgb(0, 153, 68);
+    animation: 2s ease-in-out infinite green;
+}
+.yellow {
+    animation: 2s ease-in-out infinite yellow;
+    background-color: rgb(255, 204, 0);
+}
+.blue {
+    background-color: rgb(0, 119, 255);
+    animation: 2s ease-in-out infinite blue;
+}
+@keyframes red {
+    0%, 100% {
+        transform: translate(-1rem, -1rem);
+    }
+    50% {
+        transform: translate(1rem, 1rem);
+    }  
+}
+@keyframes green {
+    0%, 100% {
+        transform: translate(1rem, -1rem);
+    }
+    50% {
+        transform: translate(-1rem, 1rem);
+    }  
+}
+@keyframes yellow {
+    0%, 100% {
+        transform: translate(1rem, 1rem);
+    }
+    50% {
+        transform: translate(-1rem, -1rem);
+    }  
+}
+@keyframes blue {
+    0%, 100% {
+        transform: translate(-1rem, 1rem);
+    }
+    50% {
+        transform: translate(1rem, -1rem);
+    }  
+}

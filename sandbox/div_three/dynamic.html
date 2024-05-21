@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dynamic</title>
+    <style media="screen">
+      .box {
+        background-color: rebeccapurple;
+        color: white;
+        margin: 20px auto;
+        text-align: center;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var elt = document.createElement('div');
+      elt.classList.add('box');
+      elt.innerHTML = 'Hello';
+      Array.from(Array(10).keys()).forEach(x => {
+        document.body.appendChild(elt.cloneNode(true));
+      });
+    </script>
+  </body>
+</html>
+
+<!-- const DivStack = () => {
+  const style = {
+    box: {
+      backgroundColor: 'rebeccapurple',
+      color: 'white',
+      margin: '20px auto',
+      textAlign: 'center',
+      width: '100px',
+    }
+  };
+  return (
+    <>
+      Array.from(Array(10).keys()).map((x, idx) => <div key={idx} {...{style}}>Hello</div>)
+    </>
+
+  );
+}; -->

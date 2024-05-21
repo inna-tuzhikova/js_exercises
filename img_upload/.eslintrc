@@ -1,0 +1,59 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "react-app"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "mocha": true,
+    "amd": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "globals": {
+    "React": false,
+    "__DEV__": false,
+    "__PROD__": false,
+    "__DEBUG__": false,
+    "__DEBUG_NW__": false
+  },
+  "rules": {
+    "semi": [
+      2,
+      "always"
+    ],
+    "global-strict": 0,
+    "quotes": [
+      2,
+      "single"
+    ],
+    "no-console": 1,
+    "no-alert": 1,
+    "no-cond-assign" : ["error", "except-parens"],
+    "eqeqeq" : 0,
+    "no-warning-comments" : [1, {"terms":["todo", "fixme", "hack", "workaround"], "location":"anywhere"}],
+    "react/jsx-closing-bracket-location": [1, "after-props"],
+    "react/jsx-curly-spacing": 1,
+    "react/jsx-indent-props": 0,
+    "react/jsx-key": 1,
+    "react/jsx-max-props-per-line": [1, {"maximum": 5}],
+    "react/jsx-no-bind": 0,
+    "react/jsx-no-duplicate-props": 2,
+    "react/jsx-no-literals": 1,
+    "react/jsx-no-undef": 2,
+    "react/jsx-pascal-case": 2,
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "react/no-danger": 1,
+    "react/no-unsafe": 1,
+    "react/no-did-update-set-state": 1,
+    "react/no-set-state": 1,
+    "react/prop-types": 0,
+    "react/prefer-es6-class": 1,
+    "react/self-closing-comp": 1
+  }
+}

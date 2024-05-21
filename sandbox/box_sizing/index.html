@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Box-sizing</title>
+    <style media="screen">
+      body {
+        display: flex;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+      }
+      .box {
+        width: 300px;
+        height: 300px;
+        background-color: crimson
+      }
+      .con-box {
+        box-sizing: content-box;
+        border: 20px solid rebeccapurple;
+      }
+      .bor-box {
+        box-sizing: border-box;
+        border: 20px solid rebeccapurple;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box con-box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="box bor-box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+  </body>
+</html>
